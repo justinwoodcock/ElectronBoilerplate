@@ -6,7 +6,6 @@ var jetpack = require('fs-jetpack');
 var usemin = require('gulp-usemin');
 var uglify = require('gulp-uglify');
 var os = require('os');
-var release_windows = require('./buil.windows');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
