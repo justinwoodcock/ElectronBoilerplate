@@ -1,0 +1,20 @@
+<md-content id="splash" layout="row" layout-align="center">
+  <div layout="column" flex="70">
+    <h1>Electron Boilerplate</h1>
+    <md-card layout-padding>
+      <md-card-content>
+        <h2>Electron, Angular and Material Design w/ DiskDB</h2>
+        <h4>Tooling includes SASS, Gulp and Livereload</h4>
+        <p>Quick way to get an Angular Electron app up and running complete with tooling, also includes a DiskDbService with basic CRUD operations for the database collections.</p>
+        <p ng-if="!userData">Click the button below to load some sample user data.</p>
+        <div ng-if="userData">
+          <p>Sample user collection from DiskDB <i>(collection located in app/diskdb/user.json)</i></p>
+          <pre pretty-json="userData"></pre>
+        </div>
+      </md-card-content>
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button ng-click="userData=getUserData();" ng-disabled="userData">Load data</md-button>
+      </div>
+    </md-card>
+  </div>
+</md-content>

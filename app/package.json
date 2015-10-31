@@ -1,0 +1,13 @@
+{
+  "name": "ElectronBoilerplate",
+  "version": "0.0.1",
+  "description": "Electron, Angular and Material Design w/ DiskDB, tooling includes SASS, Gulp and Livereload",
+  "author": {
+    "name": "Justin Woodcock",
+    "email": "me@justinwoodcock.com"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "diskdb": "^0.1.14"
+  }
+}
