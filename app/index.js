@@ -1,6 +1,5 @@
 var app = require('app');
 
-var OauthService = require('./components/server/oauthService.js');
 var DiskDbService = require('./components/server/diskDbService.js');
 
 // Module to create native browser window.
