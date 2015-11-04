@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en" ng-app="app" ng-controller="appController">
 <head>
     <title>Electron Boilerplate</title>
     <meta charset="utf-8">
@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- endbuild -->
 </head>
-<body>
-    <ng-view></ng-view>
+<body layout="column" flex>
+    <nav layout="row" ui-view="sidenav"></nav>
+    <div id="wrapper" layout="column" flex md-swipe-right="toggleNav('nav')">
+        <header id="header" ui-view="header"></header>
+        <main id="main" ui-view="main" flex></main>
+    </div>
     <!-- build:js scripts/vendor.js -->
     <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
     <script src="../bower_components/angular-aria/angular-aria.js"></script>
     <script src="../bower_components/angular-material/angular-material.js"></script>
@@ -24,8 +28,11 @@
     <!-- endbuild -->
     <!-- build:app scripts/app.js -->
     <script src="./components/app.js"></script>
+    <script src="./components/appController.js"></script>
     <script src="./components/splash/splashService.js"></script>
     <script src="./components/splash/splashController.js"></script>
+    <script src="./components/boilerplate/boilerplateService.js"></script>
+    <script src="./components/boilerplate/boilerplateController.js"></script>
     <!-- endbuild -->
     <script src="http://localhost:35729/livereload.js"></script>
     <script>require('electron-connect').client.create()</script>
