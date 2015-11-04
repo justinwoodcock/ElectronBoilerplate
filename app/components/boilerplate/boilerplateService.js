@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    // var DiskDbService = require('./components/services/diskDbService.js');
+    var DiskDbService = require('./components/services/diskDbService.js');
 
     angular.module('app')
         .service('boilerplateService', ['$q', BoilerplateService]);

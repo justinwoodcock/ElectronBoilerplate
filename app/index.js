@@ -1,6 +1,6 @@
 var app = require('app');
 
-var DiskDbService = require('./components/server/diskDbService.js');
+var DiskDbService = require('./components/services/diskDbService.js');
 
 // Module to create native browser window.
 var BrowserWindow = require('browser-window');

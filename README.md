@@ -29,4 +29,8 @@ Serve the project using gulp.
   gulp serve
 ```
 
+### TODOs
+
+  1. Remove web dependency for material design icon font by using bower
+  2. Add [gulp-electron](https://www.npmjs.com/package/gulp-electron) for app packaging
 
